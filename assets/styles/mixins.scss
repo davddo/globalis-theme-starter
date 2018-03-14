@@ -1,0 +1,23 @@
+@mixin grid($col, $gutter, $bottom: 0) {
+    width: calc(100% + #{$gutter});
+    margin-left: $gutter * -1;
+    font-size: 0;
+
+   & > * {
+        display: inline-block;
+        width: grid-size($col, $gutter);
+        margin-left: $gutter;
+        margin-bottom: $bottom;
+        margin-right: 0;
+        vertical-align: top;
+    }
+}
+@function grid-size($col, $gutter) {
+    @return calc((100% - #{$gutter} * #{$col}) / #{$col})
+}
+
+@mixin breakpoint($size) {
+    @media (min-width: #{$size - 1}) {
+        @content;
+    }
+}
