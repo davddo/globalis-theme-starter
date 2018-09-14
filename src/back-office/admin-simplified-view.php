@@ -1,6 +1,6 @@
 <?php
 
-namespace ASL\WP\Admin;
+namespace Globalis\Admin;
 
 add_action('admin_head', __NAMESPACE__ . '\\admin_simplified_css', 999);
 add_action('wp_head', __NAMESPACE__ . '\\admin_simplified_css', 999);

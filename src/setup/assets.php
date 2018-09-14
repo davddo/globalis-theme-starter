@@ -1,6 +1,6 @@
 <?php
 
-namespace ASL\WP\Setup;
+namespace Globalis\Setup;
 
 function asset_url($file, $versioning = false)
 {

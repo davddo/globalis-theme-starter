@@ -1,6 +1,6 @@
 <?php
 
-namespace ASL\WP\Wrapper;
+namespace Globalis\Wrapper;
 
 add_filter('template_include', [__NAMESPACE__ . '\\SageWrapping', 'wrap'], 109);
 

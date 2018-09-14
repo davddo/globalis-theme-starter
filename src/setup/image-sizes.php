@@ -1,6 +1,6 @@
 <?php
 
-namespace ASL\WP\Setup;
+namespace Globalis\Setup;
 
 add_action('after_setup_theme', __NAMESPACE__ . '\\register_image_sizes', 10);
 

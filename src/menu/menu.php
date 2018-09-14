@@ -1,5 +1,5 @@
 <?php
-namespace ASL\WP\Menu;
+namespace Globalis\Menu;
 
 function print_menu($theme_location, $menu_class, $submenu_class = 'sub-menu', $custom_args = [])
 {

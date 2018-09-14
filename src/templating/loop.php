@@ -1,5 +1,5 @@
 <?php
-namespace ASL\WP\Templating;
+namespace Globalis\Templating;
 
 function get_loop_count($template, $inc = true)
 {

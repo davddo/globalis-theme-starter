@@ -1,12 +1,12 @@
 <?php
 
-namespace ASL\WP\Setup;
+namespace Globalis\Setup;
 
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page([
             'page_title'      => 'Options de l\'application',
             'menu_title'      => 'Options',
-            'menu_slug'       => 'aslc-options',
+            'menu_slug'       => 'globalis-options',
             'capability'      => 'manage_options',
             'parent_slug'     => '',
             'position'        => 75,

@@ -1,9 +1,9 @@
 <?php
 
-namespace ASL\WP\Setup;
+namespace Globalis\Setup;
 
-// define('CLEA_POST_TYPE_EXAMPLE', 'example-post-type');
-// define('CLEA_TAXONOMY_EXAMPLE', 'example-taxonomy');
+// define('GLOBALIS_POST_TYPE_EXAMPLE', 'example-post-type');
+// define('GLOBALIS_TAXONOMY_EXAMPLE', 'example-taxonomy');
 
 // add_action('init', __NAMESPACE__ . '\\register_post_type_example', 0);
 // add_action('init', __NAMESPACE__ . '\\register_taxonomy_example', 0);
@@ -48,12 +48,12 @@ namespace ASL\WP\Setup;
 //         'exclude_from_search' => false,
 //         'publicly_queryable'  => false,
 //     ];
-//     register_post_type(CLEA_POST_TYPE_TESTIMONY, $args);
+//     register_post_type(GLOBALIS_POST_TYPE_EXAMPLE, $args);
 // }
 
 // function register_taxonomy_example()
 // {
 //     $labels = [];
 //     $args = [];
-//     register_taxonomy(CLEA_TAXONOMY_EXAMPLE, CLEA_POST_TYPE_EXAMPLE, $args);
+//     register_taxonomy(GLOBALIS_TAXONOMY_EXAMPLE, GLOBALIS_POST_TYPE_EXAMPLE, $args);
 // }

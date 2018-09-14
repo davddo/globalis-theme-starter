@@ -1,12 +1,12 @@
 <?php
 
-namespace ASL\WP\Setup;
+namespace Globalis\Setup;
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles', 100);
 
 function enqueue_styles()
 {
-    wp_enqueue_style('clea-2018/main', asset_url('styles/main.css', ASSETS_VERSIONING_STYLES), [], null);
+    wp_enqueue_style('project-2018/main', asset_url('styles/main.css', ASSETS_VERSIONING_STYLES), [], null);
 }
 
 add_theme_support('admin-bar', ['callback' => function () {

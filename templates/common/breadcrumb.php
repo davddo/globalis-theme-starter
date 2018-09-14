@@ -1,5 +1,5 @@
 <?php
-use FPSPP\Clea\WP\Templating;
+use Globalis\Templating;
 
 if (Templating\has_breadcrumb()) :
     $parts = Templating\get_breadcrumb_parts();
