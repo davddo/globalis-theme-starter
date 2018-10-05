@@ -1,7 +1,19 @@
-@import "vars";
-@import "base";
-@import "fonts";
-@import "forms";
-@import "mixins";
+// Globox
+// --------------------
 
-@import "parts/wp-classes";
+@import 'variables';
+@import 'globox/globox';
+
+
+// Project commons
+// --------------------
+
+@import "icons";
+@import "helpers";
+@import "global";
+@import "misc";
+
+
+// Project components
+// NOTE create one file per component, put other things into “misc”
+// --------------------

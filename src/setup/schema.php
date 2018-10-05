@@ -1,6 +1,6 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Setup;
 
 // define('GLOBALIS_POST_TYPE_EXAMPLE', 'example-post-type');
 // define('GLOBALIS_TAXONOMY_EXAMPLE', 'example-taxonomy');

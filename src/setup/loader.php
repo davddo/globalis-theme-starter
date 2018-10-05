@@ -1,5 +1,6 @@
 <?php
 
+require_once __DIR__ . '/wrapper.php';
 require_once __DIR__ . '/assets.php';
 require_once __DIR__ . '/image-sizes.php';
 require_once __DIR__ . '/menus.php';

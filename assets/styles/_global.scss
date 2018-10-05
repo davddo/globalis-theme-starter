@@ -1,0 +1,24 @@
+// General
+// NOTE styles on tag selectors
+// ---------------------
+
+body {
+    position: relative;
+    background-color: $background;
+    font-family: $font-default;
+    color: $black;
+}
+
+header, main, aside, figure, footer, menu, nav {
+    display: block;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+
+// Utilities
+// NOTE use `u-` prefix for public classes
+// ---------------------

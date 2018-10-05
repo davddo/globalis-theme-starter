@@ -1,6 +1,6 @@
 <?php
 
-namespace Globalis\Admin;
+namespace Globalis\WP\Admin;
 
 add_action('admin_head', __NAMESPACE__ . '\\admin_simplified_css', 999);
 add_action('wp_head', __NAMESPACE__ . '\\admin_simplified_css', 999);
@@ -10,6 +10,9 @@ add_filter('user_has_cap', __NAMESPACE__ . '\\admin_simplified_disable_query_mon
 
 function is_admin_simplified_view()
 {
+    if (!function_exists('get_field')) {
+        return false;
+    }
     if (!is_admin() && !is_admin_bar_showing()) {
         return false;
     }
@@ -72,6 +75,9 @@ function admin_simplified_hide_environment_info($wp_admin_bar)
 
 function admin_simplified_disable_query_monitor($allcaps, $caps, $args, $user)
 {
+    if (!function_exists('get_field')) {
+        return $allcaps;
+    }
     if (!isset($args[0]) || 'view_query_monitor' !== $args[0]) {
         return $allcaps;
     }

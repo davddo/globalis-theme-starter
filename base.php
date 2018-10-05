@@ -5,7 +5,7 @@
         <?php
         get_template_part('templates/common/browsehappy');
         get_template_part('templates/common/header');
-        include \ASL\WP\Wrapper\template_path();
+        include \Globalis\WP\Wrapper\template_path();
         get_template_part('templates/common/footer');
         ?>
     </body>

@@ -1,6 +1,8 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Wrapper;
+
+add_filter('template_include', [__NAMESPACE__ . '\\SageWrapping', 'wrap'], 109);
 
 function template_path()
 {
@@ -34,7 +36,7 @@ class SageWrapping
 
     public function __toString()
     {
-        $this->templates = apply_filters('clea-2018/wrap_' . $this->slug, $this->templates);
+        $this->templates = apply_filters('globalis/wrap_' . $this->slug, $this->templates);
         return locate_template($this->templates);
     }
 
@@ -55,4 +57,3 @@ class SageWrapping
         return new SageWrapping();
     }
 }
-add_filter('template_include', [__NAMESPACE__ . '\\SageWrapping', 'wrap'], 109);

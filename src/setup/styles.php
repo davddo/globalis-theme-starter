@@ -1,12 +1,15 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Setup;
 
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\enqueue_styles', 100);
 
 function enqueue_styles()
 {
-    wp_enqueue_style('project-2018/main', asset_url('styles/main.css', ASSETS_VERSIONING_STYLES), [], null);
+    if (!defined('ASSETS_VERSIONING_STYLES')) {
+        define('ASSETS_VERSIONING_STYLES', false);
+    }
+    wp_enqueue_style('project/main', asset_url('styles/main.css', ASSETS_VERSIONING_STYLES), [], null);
 }
 
 add_theme_support('admin-bar', ['callback' => function () {

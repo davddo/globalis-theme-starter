@@ -1,6 +1,6 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Setup;
 
 if (function_exists('acf_add_options_page')) {
     acf_add_options_page([

@@ -1,6 +1,6 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Setup;
 
 add_filter('the_seo_framework_indicator', '__return_false');
 

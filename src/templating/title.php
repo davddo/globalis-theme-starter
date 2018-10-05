@@ -1,5 +1,5 @@
 <?php
-namespace Globalis\Templating;
+namespace Globalis\WP\Templating;
 
 add_filter('the_seo_framework_search_title', __NAMESPACE__ . '\\get_search_title');
 

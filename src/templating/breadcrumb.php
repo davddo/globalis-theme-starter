@@ -1,5 +1,5 @@
 <?php
-namespace Globalis\Templating;
+namespace Globalis\WP\Templating;
 
 function has_breadcrumb()
 {

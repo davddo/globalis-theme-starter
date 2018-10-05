@@ -1,6 +1,6 @@
 <?php
 
-namespace Globalis\Setup;
+namespace Globalis\WP\Setup;
 
 add_action('after_setup_theme', __NAMESPACE__ . '\\register_soil_modules', 10);
 
